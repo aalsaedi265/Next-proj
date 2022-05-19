@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+
+import ViewCount from `../components/ViewCount`
+import VideoCount from `../components/VideoCount`
+import SubscriberCount from `../components/SubscriberCount`
 
 export default function Home() {
   return (
@@ -18,13 +23,15 @@ fetch the data, this is the way */}
 
       <Row>
         <Col md>
-          
+          <ViewCount/>
         </Col>
 
         <Col md>
+          <VideoCount/>
         </Col>
 
         <Col md>
+          <SubscriberCount/>
         </Col>
 
       </Row>
